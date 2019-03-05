@@ -110,9 +110,9 @@ You can wire the sensors to the Raspberry Pi using the following charts:
 | ---------------------------------------------- | ------------ |
 | 1 (VIN)                                        | [5.0v]       |
 | 2 (GND)                                        | [GND]        |
-| 3 (DIN)                                        | [#21]        |
-| 4 (BCLK)                                       | [#18]        |
-| 5 (LRCLK)                                      | [#19]        |
+| 3 (DIN)                                        | [GPIO21]     |
+| 4 (BCLK)                                       | [GPIO18]     |
+| 5 (LRCLK)                                      | [GPIO19]     |
 
 
 This is the layout for the pins of the Raspberry pi for guidance on where certain pins are located<br>
@@ -120,11 +120,18 @@ This is the layout for the pins of the Raspberry pi for guidance on where certai
 ![pins](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/Pinouts.JPG)
 
 
-
-
-
-
 ### PCB Design Files
+In order to develop the PCB design files, the appilcation Fritzing is required along with the Corresponding sensors file which must be added to the application under MyParts. The files can be located here: https://github.com/adafruit/Fritzing-Library/tree/master/parts
+<br>
+Once the Sensor is added to parts, you can create a frizting diagram for the wiring of the pi and sensor. It should look similar to this.
+![breadboard](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/Breadboard.JPG)
+
+From here you can create the PCB design from the wiring you just designed. The PCB layout should look similar to this.
+
+![PCB](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/PCB.JPG)
+
+With these now ready, you can put together your Gerber files and create your PCB using a lazer cutter machine.
+The Gerber files are located and can be downloaded <a href = "https://github.com/JuanRodriguez19/SensorEffector/tree/master/Gerber">Here</a>
 
 ### PCB Soldering
 
