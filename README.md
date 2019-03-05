@@ -113,7 +113,8 @@ HTU21D-F Temperature/Humidity Sensor (0x40)
 
 
 
-I2S 3W Class D Amplifier Breakout MAX98357
+I2S 3W Class D Amplifier Breakout MAX98357.
+
 | Device Pin                                     | Pi           |
 | ---------------------------------------------- | ------------ |
 | 1 (VIN)                                        | [5.0v]       |
