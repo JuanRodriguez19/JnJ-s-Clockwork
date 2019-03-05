@@ -1,4 +1,5 @@
 # JnJ-s-Clockwork
+Created By Juan Rodriguez, Johnson Dinh, and Jordan Pulido
 
 ### HTU21D-F Temperature/Humidity Sensor (0x40)
 ![HTU21D-F Sensor](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/HumiditySensor.JPG)
