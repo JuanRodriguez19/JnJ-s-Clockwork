@@ -143,6 +143,21 @@ Bottom view: <br>
 ![imageofsensor](https://github.com/JuanRodriguez19/SensorEffector/blob/master/Documentation/PcbBottom.JPG)
 
 ### Power Up
+In this section, we will now see if everything works, this works on whether you have soldered your PCB or you normally wired it onto your circuit board. Once connected boot up the Raspberry Pi, open the terminal window and follow these steps:<br>
+
+1. This will bring you into the configuration tool 
+```
+sudo rasp-config
+```
+2. Use your arrows keys to go down and select "Interfacing Options"<br>
+![Configuration Menu](https://github.com/JDinhGit/TempSensor/blob/master/Documentation/PiScreenshot/Configuration.PNG)<br>
+3. Select I2C and submit yes. It should display ARM I2C is enabled.<br>
+![i2c option](https://github.com/JDinhGit/TempSensor/blob/master/Documentation/PiScreenshot/i2c.PNG)<br>
+4. Exit by selecting the finish option. By using the command below it should your address which is (0x40).<br>
+```
+sudo i2cdetect -y 1
+```
+![Address Output](https://github.com/JDinhGit/TempSensor/blob/master/Documentation/PiScreenshot/address.PNG)<br>
 
 ### Case Design
 
