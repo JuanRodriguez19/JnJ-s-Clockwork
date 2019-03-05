@@ -24,3 +24,28 @@
 10. [Assembly for Hardware](#assembly-for-hardware)
 11. [Testing](#testing)
 12. [Reproduction of Project](#reproduction-of-project)
+
+### Introduction
+
+### Budget for Materials Required
+
+### Time Schedule
+
+### Assembly of Pi
+
+### Wiring 
+
+### PCB Design Files
+
+### PCB Soldering
+
+### Power Up
+
+### Case Design
+
+### Assembly for Hardware
+
+### Testing
+
+### Reproduction of Project
+
