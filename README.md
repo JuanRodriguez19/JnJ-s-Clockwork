@@ -153,13 +153,14 @@ sudo rasp-config
 ![Configuration Menu](https://github.com/JDinhGit/TempSensor/blob/master/Documentation/PiScreenshot/Configuration.PNG)<br>
 3. Select I2C and submit yes. It should display ARM I2C is enabled.<br>
 ![i2c option](https://github.com/JDinhGit/TempSensor/blob/master/Documentation/PiScreenshot/i2c.PNG)<br>
-4. Exit by selecting the finish option. By using the command below it should your address which is (0x40).<br>
+4. Exit by selecting the finish option. By using the command below it should your address's for the sensors being (0x40) and (0x70).<br>
 ```
 sudo i2cdetect -y 1
 ```
 ![Address Output](https://github.com/JDinhGit/TempSensor/blob/master/Documentation/PiScreenshot/address.PNG)<br>
 
 ### Case Design
+Still in development. The maximum dimensions the final product can be is around 13/16" x 6" x 2 7/8" = (32.5cm x 15.25cm x 7.25cm)
 
 ### Assembly for Hardware
 
