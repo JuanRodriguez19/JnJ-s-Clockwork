@@ -83,7 +83,8 @@ https://www.youtube.com/watch?v=3230nCz3XQA
 You can wire the sensors to the Raspberry Pi using the following charts:
 <br>
 
-HTU21D-F Temperature/Humidity Sensor (0x40)
+HTU21D-F Temperature/Humidity Sensor (0x40).
+
 | Device Pin| Pi           |
 | --------- | ------------ |
 | 1 (VIN)   | [5.0v]       |
@@ -94,7 +95,8 @@ HTU21D-F Temperature/Humidity Sensor (0x40)
 
 
 
-1.2″ 4-Digit 7-Segment display
+1.2″ 4-Digit 7-Segment display.
+
 | Device Pin| Pi           |
 | --------- | ------------ |
 | 1 (D)     | [SDA]        |
@@ -102,15 +104,6 @@ HTU21D-F Temperature/Humidity Sensor (0x40)
 | 3 (+)     | [5.0v]       |
 | 4 (-)     | [GND]        |
 | 5 (IO)    | [3.3v]       |
-
-| Device Pin                                     | Pi           |
-| ---------------------------------------------- | ------------ |
-| 1 (VIN)                                        | [5.0v]       |
-| 2 (GND)                                        | [GND]        |
-| 3 (DIN)                                        | [#21]        |
-| 4 (BCLK)                                       | [#18]        |
-| 5 (LRCLK)                                      | [#19]        |
-
 
 
 I2S 3W Class D Amplifier Breakout MAX98357.
