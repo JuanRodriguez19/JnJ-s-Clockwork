@@ -81,7 +81,6 @@ https://www.youtube.com/watch?v=3230nCz3XQA
 
 You can wire the sensors to the Raspberry Pi using the following charts:
 <br>
-<br>
 
 <b>HTU21D-F Temperature/Humidity Sensor (0x40).</b>
 
@@ -114,6 +113,11 @@ You can wire the sensors to the Raspberry Pi using the following charts:
 | 3 (DIN)                                        | [#21]        |
 | 4 (BCLK)                                       | [#18]        |
 | 5 (LRCLK)                                      | [#19]        |
+
+
+This is the layout for the pins of the Raspberry pi for guidance on where certain pins are located<br>
+
+![pins](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/Pinouts.JPG)
 
 
 
