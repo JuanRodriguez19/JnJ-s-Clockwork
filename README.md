@@ -23,8 +23,10 @@ Created By Juan Rodriguez, Johnson Dinh, and Jordan Pulido
 8. [Power Up](#power-up)
 9. [Case Design](#case-design)
 10. [Assembly for Hardware](#assembly-for-hardware)
-11. [Testing](#testing)
-12. [Reproduction of Project](#reproduction-of-project)
+11. [Code for Sensors](#code-for-sensors)
+12. [Database Design](#database-design)
+13. [Mobile Application](#mobile-application) 
+14. [Reproduction of Project](#reproduction-of-project)
 
 ### Introduction
 JnJ’s Clockwork is an android based alarm mobile application where users are able to set and customize alarms of their choice for daily use. The user will be able to create alarm profiles along with being able to set timers and stopwatches. When connected to its corresponding hardware component, the app furthers its capabilities by allowing users the ability to read local temperatures via the sensor included. The project is designed to give users ease of access to anything time related in a simple and clean formfactor. <br>
@@ -160,11 +162,29 @@ sudo i2cdetect -y 1
 ![Address Output](https://github.com/JDinhGit/TempSensor/blob/master/Documentation/PiScreenshot/address.PNG)<br>
 
 ### Case Design
-Still in development. The maximum dimensions the final product can be is around 13/16" x 6" x 2 7/8" = (32.5cm x 15.25cm x 7.25cm)
+Still in development. The maximum dimensions the final product can be is around 13/16" x 6" x 2 7/8" = (32.5cm x 15.25cm x 7.25cm).
 
 ### Assembly for Hardware
+This can only be worked on once case is complete.
 
-### Testing
+### Code for Sensors
+<b>HTU21D-F Temperature/Humidity Sensor</b>
+
+<br>
+
+<b>1.2″ 4-Digit 7-Segment display</b>
+
+<br>
+
+<b>I2S 3W Class D Amplifier Breakout MAX98357</b>
+
+<br>
+
+### Database Design
+The database connection is established and connected to the mobile application. Reading and writing from the sensor to the database are also required. The database utilizes user-authentication to allow maximum security and protection for the users information. In order to read and write temperature, the user must be registered using a username and password through authentication processing. Offline mode allows access to the app, without the need to register and login. Offline mode skips user-authentication, and moves the user to the actual app. In offline mode, there will be no form of communications to the database.  Therefore the user is unable to read/write temperature to the database. 
+
+### Mobile Application
+
 
 ### Reproduction of Project
-
+If you are to follow these steps exactly as explained in this guide, you should be able to reproduce this project without any diffculties considering you have the necessary equipment and tools.
