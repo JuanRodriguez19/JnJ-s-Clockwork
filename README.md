@@ -131,7 +131,7 @@ From here you can create the PCB design from the wiring you just designed. The P
 ![PCB](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/PCB.JPG)
 
 With these now ready, you can put together your Gerber files and create your PCB using a lazer cutter machine.
-The Gerber files are located and can be downloaded <a href = "https://github.com/JuanRodriguez19/SensorEffector/tree/master/Gerber">Here</a>
+The Gerber files are located and can be downloaded <a href = "https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Fritzing/n01182963%20GerberFiles.zip">Here</a>
 
 ### PCB Soldering
 
