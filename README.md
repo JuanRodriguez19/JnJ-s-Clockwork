@@ -74,6 +74,7 @@ If you are still unsure or struggling with a part in particular, this video prov
 ### Wiring
 Before wiring each sensor to the breadboard, it is important to solder the pins that come included to the sensors corresponding pin layouts. Addtionally, make sure to cut the exccess pins that come included that will not be required for each sensor. 
 <br>
+<br>
 When soldering, make sure you have safetly glasses equipped along with having proper ventilation that contains a extractor arm for the fumes. A soldering toolkit is also required which is available in most labs.
 Here is a great soldering tutorial to help with those unsure.<br>
 https://www.youtube.com/watch?v=3230nCz3XQA
