@@ -134,6 +134,13 @@ With these now ready, you can put together your Gerber files and create your PCB
 The Gerber files are located and can be downloaded <a href = "https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Fritzing/n01182963%20GerberFiles.zip">Here</a>
 
 ### PCB Soldering
+Using the same rules as when soldering the Sensors, solder pieces of wire in between the vias on the PCB board. Once thats done, solder the 20 pin socket to the PCB board to the corresonding holes for where the pi would connect. For the remaining pin sockets you have, solder in the respective headers for each sensor in the appropriate locations. Your final board should look similar to this.
+
+Top view with sensors connected: <br>
+![imageofsensor](https://github.com/JuanRodriguez19/SensorEffector/blob/master/Documentation/IMG_0924.jpg)
+
+Bottom view: <br>
+![imageofsensor](https://github.com/JuanRodriguez19/SensorEffector/blob/master/Documentation/PcbBottom.JPG)
 
 ### Power Up
 
