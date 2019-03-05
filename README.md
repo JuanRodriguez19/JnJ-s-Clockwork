@@ -4,13 +4,10 @@
 ![HTU21D-F Sensor](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/HumiditySensor.JPG)
 
 ### 1.2″ 4-Digit 7-Segment display
+![Display](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/Display.JPG)
 
 ### I2S 3W Class D Amplifier Breakout MAX98357
-
-### Speaker 3” Diameter 8 Ohm 1 Watt
-
-
-
+![Amp](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/Amplifier.JPG)
 
 
 
