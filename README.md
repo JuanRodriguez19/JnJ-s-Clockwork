@@ -82,6 +82,7 @@ https://www.youtube.com/watch?v=3230nCz3XQA
 <br>
 You can wire the sensors to the Raspberry Pi using the following charts:
 <br>
+<br>
 
 HTU21D-F Temperature/Humidity Sensor (0x40).
 
@@ -92,7 +93,6 @@ HTU21D-F Temperature/Humidity Sensor (0x40).
 | 3 (GND)   | [GND]        |
 | 4 (SDA)   | [GPIO 2]     |
 | 5 (SCI)   | [GPIO 3]     |
-
 
 
 1.2″ 4-Digit 7-Segment display.
