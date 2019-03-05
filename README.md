@@ -71,7 +71,51 @@ These steps will cover how to set up the Raspberry Pi 3 B+ properly so that you 
 If you are still unsure or struggling with a part in particular, this video provides a step by step explanation for everthing required: https://www.youtube.com/watch?v=xBlxuf_LSCM
 
 
-### Wiring 
+### Wiring
+Before wiring each sensor to the breadboard, it is important to solder the pins that come included to the sensors corresponding pin layouts. Addtionally, make sure to cut the exccess pins that come included that will not be required for each sensor. 
+<br>
+When soldering, make sure you have safetly glasses equipped along with having proper ventilation that contains a extractor arm for the fumes. A soldering toolkit is also required which is available in most labs.
+Here is a great soldering tutorial to help with those unsure.<br>
+https://www.youtube.com/watch?v=3230nCz3XQA
+
+<br>
+You can wire the sensors to the Raspberry Pi using the following charts:
+<br>
+
+HTU21D-F Temperature/Humidity Sensor (0x40)
+| Device Pin| Pi           |
+| --------- | ------------ |
+| 1 (VIN)   | [5.0v]       |
+| 2 (3.3v)  | [3.3v]       |
+| 3 (GND)   | [GND]        |
+| 4 (SDA)   | [GPIO 2]     |
+| 5 (SCI)   | [GPIO 3]     |
+<br>
+
+
+1.2″ 4-Digit 7-Segment display:
+| Device Pin| Pi           |
+| --------- | ------------ |
+| 1 (D)     | [SDA]        |
+| 2 (C)     | [SCL]        |
+| 3 (+)     | [5.0v]       |
+| 4 (-)     | [GND]        |
+| 5 (IO)    | [3.3v]       |
+<br>
+
+
+I2S 3W Class D Amplifier Breakout MAX98357
+| Device Pin| Pi           |
+| --------- | ------------ |
+| 1 (VIN)   | [5.0v]       |
+| 2 (GND)   | [GND]        |
+| 3 (DIN)   | [#21]        |
+| 4 (BCLK)  | [#18]        |
+| 5 (LRCLK) | [#19]        |
+<br>
+
+
+
 
 ### PCB Design Files
 
