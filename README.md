@@ -91,10 +91,10 @@ HTU21D-F Temperature/Humidity Sensor (0x40)
 | 3 (GND)   | [GND]        |
 | 4 (SDA)   | [GPIO 2]     |
 | 5 (SCI)   | [GPIO 3]     |
-<br>
 
 
-1.2″ 4-Digit 7-Segment display:
+
+1.2″ 4-Digit 7-Segment display
 | Device Pin| Pi           |
 | --------- | ------------ |
 | 1 (D)     | [SDA]        |
@@ -102,7 +102,7 @@ HTU21D-F Temperature/Humidity Sensor (0x40)
 | 3 (+)     | [5.0v]       |
 | 4 (-)     | [GND]        |
 | 5 (IO)    | [3.3v]       |
-<br>
+
 
 
 I2S 3W Class D Amplifier Breakout MAX98357
@@ -113,7 +113,7 @@ I2S 3W Class D Amplifier Breakout MAX98357
 | 3 (DIN)   | [#21]        |
 | 4 (BCLK)  | [#18]        |
 | 5 (LRCLK) | [#19]        |
-<br>
+
 
 
 
