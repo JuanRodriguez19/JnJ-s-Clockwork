@@ -31,6 +31,9 @@ JnJ’s Clockwork is an android based alarm mobile application where users are a
 This project consists of the HTU21D-F Temperature/Humidity Sensor for reading local temperature values, a 1.2″ 4-Digit 7-Segment display for displaying current time and temperature readings, and a I2S 3W Class D Amplifier Breakout MAX98357 for audio when an alarm goes off. 
 
 ### Budget for Materials Required
+The required materials and budget for this project can be found in the documentation folder in this repository or in this link provided.
+<a href = "https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/JnJ's%20Clockwork%20Budget.pdf">[Budget]</a> <br> 
+<br> ![Budget](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/Budget.JPG) <br>
 
 ### Time Schedule
 
