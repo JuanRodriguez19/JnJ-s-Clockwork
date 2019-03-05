@@ -114,6 +114,15 @@ I2S 3W Class D Amplifier Breakout MAX98357
 | 4 (BCLK)  | [#18]        |
 | 5 (LRCLK) | [#19]        |
 
+| Device Pin                                     | Pi           |
+| ---------------------------------------------- | ------------ |
+| 1 (GND)                                        | [Ground]     |
+| 2 (VIN)                                        | [3.3v]       |
+| 3 (SDA)                                        | [BCM 2/SDA]  |
+| 4 (SCK)                                        | [BCM 3/SCL]  |
+| 5 (RST)                                        | [BCM 17]     |
+| 6 (AD) Connected to 3 200k Resistors in Series | [Ground]     |
+
 
 
 
