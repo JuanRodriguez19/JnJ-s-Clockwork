@@ -71,6 +71,83 @@ These steps will cover how to set up the Raspberry Pi 3 B+ properly so that you 
 9. To turn off the Pi, type `sudo powerdown` in the terminal. 
 
 If you are still unsure or struggling with a part in particular, this video provides a step by step explanation for everthing required: https://www.youtube.com/watch?v=xBlxuf_LSCM
+<br>
+
+For this project alot of code will be used with CircuitPython so here is the instalation proccess for it.
+<br>
+
+The following tests were experimented used by <a href="https://adafruit.com"> Adafruit. </a>
+
+## Installing CircuitPython
+
+Run the update commands for the Raspberry Pi.
+
+```
+sudo apt-get update
+
+sudo apt-get upgrade
+```
+
+When done installing, run the command line for the python tools
+
+```
+sudo pip3 install --upgrade setuptools
+```
+
+Verify you have I2C Enabled
+
+```
+ls /dev/i2c*
+```
+
+![Image of i2c Confirmation](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/I2C Confirm.JPG)
+
+Begin to install the Python Libraries
+
+```
+pip3 install RPI.GPIO
+```
+
+Use the following command to install adafruit-blinka
+
+```
+pip3 install adafruit-blinka
+```
+
+To test if Python works, open python in the Raspberry Pi (it should be installed at this point), and write an example file to sample output.
+
+```
+import board
+import digitalio
+import busio
+ 
+print("Hello blinka!")
+ 
+# Try to great a Digital input
+pin = digitalio.DigitalInOut(board.D4)
+print("Digital IO ok!")
+ 
+# Try to create an I2C device
+i2c = busio.I2C(board.SCL, board.SDA)
+print("I2C ok!")
+ 
+# Try to create an SPI device
+spi = busio.SPI(board.SCLK, board.MOSI, board.MISO)
+print("SPI ok!")
+ 
+print("done!")
+```
+
+Save it, then run it on the command line by typing
+
+```
+python3 blinkatest.py
+```
+
+The following should be seen
+
+![Image of output](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/Sample Output.JPG)
+
 
 
 ### Wiring
@@ -210,6 +287,56 @@ sudo ./HTU21D_test
 <br>
 
 <b>I2S 3W Class D Amplifier Breakout MAX98357</b>
+<br>
+
+For testing the sensor, the following line was used with the help of internet connectivity within the Raspberry Pi.
+
+```
+curl -sS https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/i2samp.sh | bash
+```
+
+Select yes for the following questions the file asks by typing "y".
+
+![Image of Confirmation](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/MAX98357 Test Confirmation.JPG)
+
+The file will ask to reboot. Type "y" again to reboot the Raspberry Pi. When the device is rebooted, type in the same command
+
+```
+curl -sS https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/i2samp.sh | bash
+```
+
+The script should recognize the device at this point and noise should be coming out of the speaker. To adjust the volume, Alsamixer was used within the terminal. The reccomended volume is 50 within Alsamixer.
+
+```
+Alsamixer
+```
+
+!{Image of Alsamixer](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/Alsamixer.JPG)
+
+Press "ESC" to exit Alsamixer. To actually save the volume settings THE PI MUST BE REBOOTED TWICE, type in the following to reboot the system.
+
+```
+sudo reboot
+```
+
+Start up the Raspberry Pi, type in the following to generate a white noise coming out of the speaker
+
+```
+speaker-test -c2
+```
+
+If real sound wants to be heard, here is a demo
+
+```
+sudo apt-get install -y mpg123
+mpg123 http://ice1.somafm.com/u80s-128-mp3
+```
+
+Open another terminal window to access Alsamixer to adjust volume of the speaker.
+
+![Image of Output](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/MAX98357 I2S Outputs.JPG)
+
+If errors occur, refer to Adafruit's manual setup by clicking <a href="https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/raspberry-pi-usage">HERE </a>
 
 <br>
 
