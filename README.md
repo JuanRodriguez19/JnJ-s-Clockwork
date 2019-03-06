@@ -241,7 +241,7 @@ python3 blinkatest.py
 
 The following should be seen
 
-![Image of output](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/Sample Output.JPG)
+![Image of output](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/Sample%20Output.JPG)
 
 
 ### Code for Sensors
@@ -297,7 +297,7 @@ curl -sS https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scrip
 
 Select yes for the following questions the file asks by typing "y".
 
-![Image of Confirmation](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/MAX98357 Test Confirmation.JPG)
+![Image of Confirmation](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/MAX98357%20Test%20Confirmation.JPG)
 
 The file will ask to reboot. Type "y" again to reboot the Raspberry Pi. When the device is rebooted, type in the same command
 
@@ -311,7 +311,7 @@ The script should recognize the device at this point and noise should be coming 
 Alsamixer
 ```
 
-!{Image of Alsamixer](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/Alsamixer.JPG)
+![Image of Alsamixer](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/Alsamixer.JPG)
 
 Press "ESC" to exit Alsamixer. To actually save the volume settings THE PI MUST BE REBOOTED TWICE, type in the following to reboot the system.
 
@@ -334,7 +334,7 @@ mpg123 http://ice1.somafm.com/u80s-128-mp3
 
 Open another terminal window to access Alsamixer to adjust volume of the speaker.
 
-![Image of Output](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/MAX98357 I2S Outputs.JPG)
+![Image of Output](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/MAX98357%20I2S%20Outputs.JPG)
 
 If errors occur, refer to Adafruit's manual setup by clicking <a href="https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/raspberry-pi-usage">HERE </a>
 
