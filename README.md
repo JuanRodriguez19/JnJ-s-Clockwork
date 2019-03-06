@@ -78,7 +78,7 @@ For this project alot of code will be used with CircuitPython so here is the ins
 
 The following tests were experimented used by <a href="https://adafruit.com"> Adafruit. </a>
 
-## Installing CircuitPython
+<b>Installing CircuitPython</b>
 
 Run the update commands for the Raspberry Pi.
 
