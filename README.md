@@ -293,7 +293,6 @@ You would also need python smbus and python-imaging library:
 ```
 sudo apt-get install python-smbus python-imaging
 ```
-
 Clone the url onto your pi and move into it:
 ```
 git clone https://github.com/adafruit/Adafruit_Python_LED_Backpack
@@ -303,13 +302,13 @@ This is the last library you need to install:
 ```
 sudo python setup.py install
 ```
-Now go into your file named Adafruit_LED_Backpack:
+Now go into your file named examples:
 ```
-cd Adafruit_LED_Backpack
+cd examples
 ```
 There are alot of test codes we can use here, but in case we just need our sensor to display the time:
 ```
-sudo python SevenSegment.py
+sudo python ex_7segment_clock.py
 ```
 
 <br>
