@@ -139,11 +139,11 @@ The Gerber files are located and can be downloaded <a href = "https://github.com
 ### PCB Soldering
 Using the same rules as when soldering the Sensors, solder pieces of wire in between the vias on the PCB board. Once thats done, solder the 20 pin socket to the PCB board to the corresonding holes for where the pi would connect. For the remaining pin sockets you have, solder in the respective headers for each sensor in the appropriate locations. Your final board should look similar to this.
 
-Top view with sensors connected: <br>
-![imageofsensor](https://github.com/JuanRodriguez19/SensorEffector/blob/master/Documentation/IMG_0924.jpg)
+Top view: <br>
+![imageofboard](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/PCB%20Top%20View.jpg)
 
 Bottom view: <br>
-![imageofsensor](https://github.com/JuanRodriguez19/SensorEffector/blob/master/Documentation/PcbBottom.JPG)
+![imageofboard](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/PCB%20Bottom%20View.jpg)
 
 ### Power Up
 In this section, we will now see if everything works, this works on whether you have soldered your PCB or you normally wired it onto your circuit board. Once connected boot up the Raspberry Pi, open the terminal window and follow these steps:<br>
