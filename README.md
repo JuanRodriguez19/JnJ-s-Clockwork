@@ -22,12 +22,12 @@ Created By Juan Rodriguez, Johnson Dinh, and Jordan Pulido
 7. [PCB Soldering](#pcb-soldering)
 8. [Power Up](#power-up)
 9. [Case Design](#case-design)
-10.[Assembly for Hardware](#assembly-for-hardware)
-11.[Installing CircuitPython](#installing-circuitpython)
-12.[Code for Sensors](#code-for-sensors)
-13.[Database Design](#database-design)
-14.[Mobile Application](#mobile-application) 
-15.[Reproduction of Project](#reproduction-of-project)
+10. [Assembly for Hardware](#assembly-for-hardware)
+11. [Installing CircuitPython](#installing-circuitpython)
+12. [Code for Sensors](#code-for-sensors)
+13. [Database Design](#database-design)
+14. [Mobile Application](#mobile-application) 
+15. [Reproduction of Project](#reproduction-of-project)
 
 ### Introduction
 JnJ’s Clockwork is an android based alarm mobile application where users are able to set and customize alarms of their choice for daily use. The user will be able to create alarm profiles along with being able to set timers and stopwatches. When connected to its corresponding hardware component, the app furthers its capabilities by allowing users the ability to read local temperatures via the sensor included. The project is designed to give users ease of access to anything time related in a simple and clean formfactor. <br>
