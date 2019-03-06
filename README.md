@@ -22,11 +22,12 @@ Created By Juan Rodriguez, Johnson Dinh, and Jordan Pulido
 7. [PCB Soldering](#pcb-soldering)
 8. [Power Up](#power-up)
 9. [Case Design](#case-design)
-10. [Assembly for Hardware](#assembly-for-hardware)
-11. [Code for Sensors](#code-for-sensors)
-12. [Database Design](#database-design)
-13. [Mobile Application](#mobile-application) 
-14. [Reproduction of Project](#reproduction-of-project)
+10.[Assembly for Hardware](#assembly-for-hardware)
+11.[Installing CircuitPython](#installing-circuitpython)
+12.[Code for Sensors](#code-for-sensors)
+13.[Database Design](#database-design)
+14.[Mobile Application](#mobile-application) 
+15.[Reproduction of Project](#reproduction-of-project)
 
 ### Introduction
 JnJ’s Clockwork is an android based alarm mobile application where users are able to set and customize alarms of their choice for daily use. The user will be able to create alarm profiles along with being able to set timers and stopwatches. When connected to its corresponding hardware component, the app furthers its capabilities by allowing users the ability to read local temperatures via the sensor included. The project is designed to give users ease of access to anything time related in a simple and clean formfactor. <br>
@@ -71,83 +72,6 @@ These steps will cover how to set up the Raspberry Pi 3 B+ properly so that you 
 9. To turn off the Pi, type `sudo powerdown` in the terminal. 
 
 If you are still unsure or struggling with a part in particular, this video provides a step by step explanation for everthing required: https://www.youtube.com/watch?v=xBlxuf_LSCM
-<br>
-
-For this project alot of code will be used with CircuitPython so here is the instalation proccess for it.
-<br>
-
-The following tests were experimented used by <a href="https://adafruit.com"> Adafruit. </a>
-
-#### Installing CircuitPython
-
-Run the update commands for the Raspberry Pi.
-
-```
-sudo apt-get update
-
-sudo apt-get upgrade
-```
-
-When done installing, run the command line for the python tools
-
-```
-sudo pip3 install --upgrade setuptools
-```
-
-Verify you have I2C Enabled
-
-```
-ls /dev/i2c*
-```
-
-![Image of i2c Confirmation](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/I2C Confirm.JPG)
-
-Begin to install the Python Libraries
-
-```
-pip3 install RPI.GPIO
-```
-
-Use the following command to install adafruit-blinka
-
-```
-pip3 install adafruit-blinka
-```
-
-To test if Python works, open python in the Raspberry Pi (it should be installed at this point), and write an example file to sample output.
-
-```
-import board
-import digitalio
-import busio
- 
-print("Hello blinka!")
- 
-# Try to great a Digital input
-pin = digitalio.DigitalInOut(board.D4)
-print("Digital IO ok!")
- 
-# Try to create an I2C device
-i2c = busio.I2C(board.SCL, board.SDA)
-print("I2C ok!")
- 
-# Try to create an SPI device
-spi = busio.SPI(board.SCLK, board.MOSI, board.MISO)
-print("SPI ok!")
- 
-print("done!")
-```
-
-Save it, then run it on the command line by typing
-
-```
-python3 blinkatest.py
-```
-
-The following should be seen
-
-![Image of output](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/Sample Output.JPG)
-
 
 
 ### Wiring
@@ -243,6 +167,82 @@ Still in development. The maximum dimensions the final product can be is around 
 
 ### Assembly for Hardware
 This can only be worked on once case is complete.
+
+### Installing CircuitPython
+For this project alot of code will be used with CircuitPython so here is the instalation proccess for it.
+<br>
+
+The following tests were experimented used by <a href="https://adafruit.com"> Adafruit. </a>
+<br>
+
+Run the update commands for the Raspberry Pi.
+
+```
+sudo apt-get update
+
+sudo apt-get upgrade
+```
+
+When done installing, run the command line for the python tools
+
+```
+sudo pip3 install --upgrade setuptools
+```
+
+Verify you have I2C Enabled
+
+```
+ls /dev/i2c*
+```
+
+![Image of i2c Confirmation](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/I2C Confirm.JPG)
+
+Begin to install the Python Libraries
+
+```
+pip3 install RPI.GPIO
+```
+
+Use the following command to install adafruit-blinka
+
+```
+pip3 install adafruit-blinka
+```
+
+To test if Python works, open python in the Raspberry Pi (it should be installed at this point), and write an example file to sample output.
+
+```
+import board
+import digitalio
+import busio
+ 
+print("Hello blinka!")
+ 
+# Try to great a Digital input
+pin = digitalio.DigitalInOut(board.D4)
+print("Digital IO ok!")
+ 
+# Try to create an I2C device
+i2c = busio.I2C(board.SCL, board.SDA)
+print("I2C ok!")
+ 
+# Try to create an SPI device
+spi = busio.SPI(board.SCLK, board.MOSI, board.MISO)
+print("SPI ok!")
+ 
+print("done!")
+```
+
+Save it, then run it on the command line by typing
+
+```
+python3 blinkatest.py
+```
+
+The following should be seen
+
+![Image of output](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/Sample Output.JPG)
+
 
 ### Code for Sensors
 <b>HTU21D-F Temperature/Humidity Sensor</b>
