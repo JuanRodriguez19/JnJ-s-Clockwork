@@ -283,6 +283,34 @@ sudo ./HTU21D_test
 <br>
 
 <b>1.2″ 4-Digit 7-Segment display</b>
+<br>
+For this sensor we want to be able to display the current time. With that python and its librarys need to be installed:
+```
+sudo apt-get update
+sudo apt-get install build-essential python-dev
+```
+You would also need python smbus and python-imaging library:
+```
+sudo apt-get install python-smbus python-imaging
+```
+
+Clone the url onto your pi and move into it:
+```
+git clone https://github.com/adafruit/Adafruit_Python_LED_Backpack
+cd Adafruit_Python_LED_Backpack
+```
+This is the last library you need to install:
+```
+sudo python setup.py install
+```
+Now go into your file named Adafruit_LED_Backpack:
+```
+cd Adafruit_LED_Backpack
+```
+There are alot of test codes we can use here, but in case we just need our sensor to display the time:
+```
+sudo python SevenSegment.py
+```
 
 <br>
 
