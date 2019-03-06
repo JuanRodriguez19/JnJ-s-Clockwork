@@ -195,7 +195,7 @@ Verify you have I2C Enabled
 ls /dev/i2c*
 ```
 
-![Image of i2c Confirmation](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/tree/master/Documentation/Pictures/I2C Confirm.JPG)
+![Image of i2c Confirmation](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/I2C%20Confirm.JPG)
 
 Begin to install the Python Libraries
 
