@@ -246,6 +246,7 @@ The following should be seen
 
 ### Code for Sensors
 <b>HTU21D-F Temperature/Humidity Sensor</b>
+<br>
 With the code provided in this repository, this test code should get your sensor to read and write temperature/humidity.
 
 Firstly though assuming you installed circuit python, all that is required is to run the command line to install HTU21D libraries.
