@@ -272,7 +272,7 @@ while True:
 ```
 
 Your output should look like this.
-![]()
+![TempeartureOutput](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/temperatureoutput.jpg)
 
 <br>
 
