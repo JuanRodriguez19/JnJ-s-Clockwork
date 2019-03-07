@@ -246,39 +246,32 @@ The following should be seen
 
 ### Code for Sensors
 <b>HTU21D-F Temperature/Humidity Sensor</b>
-<br>
 With the code provided in this repository, this test code should get your sensor to read and write temperature/humidity.
-[Test Code Link](https://github.com/JDinhGit/TempSensor/tree/master/HTU21D%20-%20Test%20Code/c)<br>
-1. You can copy the code by either retyping everything and understanding it, or you can use the following line:
-```
-git clone https://github.com/JDinhGit/TempSensor
-```
-2. Go into the file using (assuming the terminal window was already in the pi folder):
-```
-cd TempSensor
-```
-3. Go into the sensor folder:
-```
-cd HTU21D/c
-```
-4. Use the make file command:
-```
-make
-```
-It should display this:<br>
 
-![Make](https://github.com/JDinhGit/TempSensor/blob/master/Documentation/PiScreenshot/Make.PNG)<br>
-
-5. Now run it, it should display temperature and humidity:
+Firstly though assuming you installed circuit python, all that is required is to run the command line to install HTU21D libraries.
 ```
-sudo ./HTU21D_test
+sudo pip3 install adafruit-circuitpython-htu21d
+```
+You can copy this code and run it.
+
+```import time
+import board
+import busio
+from adafruit_htu21d import HTU21D
+ 
+# Create library object using our Bus I2C port
+i2c = busio.I2C(board.SCL, board.SDA)
+sensor = HTU21D(i2c)
+ 
+ 
+while True:
+    print("\nTemperature: %0.1f C" % sensor.temperature)
+    print("Humidity: %0.1f %%" % sensor.relative_humidity)
+    time.sleep(2)
 ```
 
-![Result](https://github.com/JDinhGit/TempSensor/blob/master/Documentation/PiScreenshot/Result.PNG)<br>
-
-6. One thing you can do to see if the sensor is still functioning, is that you can blow on it and the temperature and humidity should change.<br>
-
-![Sensor Test](https://github.com/JDinhGit/TempSensor/blob/master/Documentation/SensorOutput.PNG)
+Your output should look like this.
+![]()
 
 <br>
 
