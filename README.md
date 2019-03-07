@@ -271,7 +271,7 @@ while True:
     time.sleep(2)
 ```
 
-Your output should look like this.
+Your output should look like this.<br>
 ![TempeartureOutput](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/temperatureoutput.jpg)
 
 <br>
