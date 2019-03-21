@@ -5,7 +5,7 @@ Created By Juan Rodriguez, Johnson Dinh, and Jordan Pulido
 ![HTU21D-F Sensor](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/HumiditySensor.JPG)
 
 ### 1.2″ 4-Digit 7-Segment display
-![Display](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/4-Digit%207%20Segment%20Display.JPGz)
+![Display](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/4-Digit%207%20Segment%20Display.JPG)
 
 ### I2S 3W Class D Amplifier Breakout MAX98357
 ![Amp](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/Amplifier.JPG)
