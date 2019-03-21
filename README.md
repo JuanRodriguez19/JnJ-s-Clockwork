@@ -5,7 +5,7 @@ Created By Juan Rodriguez, Johnson Dinh, and Jordan Pulido
 ![HTU21D-F Sensor](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/HumiditySensor.JPG)
 
 ### 1.2″ 4-Digit 7-Segment display
-![Display](https://github.com/adafruit/Fritzing-Library/blob/master/parts/Adafruit%200.56%20inch%207-segment%20LED%20Backpack%20White.fzpz)
+![Display](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/4-Digit%207%20Segment%20Display.JPGz)
 
 ### I2S 3W Class D Amplifier Breakout MAX98357
 ![Amp](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/Amplifier.JPG)
