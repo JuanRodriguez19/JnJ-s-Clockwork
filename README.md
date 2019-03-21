@@ -127,7 +127,7 @@ This is the layout for the pins of the Raspberry pi for guidance on where certai
 In order to develop the PCB design files, the appilcation Fritzing is required along with the Corresponding sensors file which must be added to the application under MyParts. The files can be located here: https://github.com/adafruit/Fritzing-Library/tree/master/parts
 <br>
 Once the Sensor is added to parts, you can create a frizting diagram for the wiring of the pi and sensor. It should look similar to this.
-![breadboard](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/Breadboard.JPG)
+![breadboard](https://github.com/JuanRodriguez19/JnJ-s-Clockwork/blob/master/Documentation/Pictures/ProperBreadboard.JPG)
 
 From here you can create the PCB design from the wiring you just designed. The PCB layout should look similar to this.
 
