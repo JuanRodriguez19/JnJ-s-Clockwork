@@ -104,7 +104,9 @@ You can wire the sensors to the Raspberry Pi using the following charts:
 | 2 (C)     | [SCL]        |
 | 3 (+)     | [5.0v]       |
 | 4 (-)     | [GND]        |
+| 5 (IO)    | [3.3v]       |
 
+The IO pin only needs to be connected if you are working with the 1.2" display which has the same pinouts as the 0.56" one.
 
 
 <b>I2S 3W Class D Amplifier Breakout MAX98357.</b>
