@@ -11,12 +11,16 @@
         android:id="@+id/TempHistory"
         android:title="@string/recent_readings"></item>
 
+    <item android:id="@+id/alarmHardware" android:title="Alarm Hardware"></item>
+
     <item android:id="@+id/settings" android:title="@string/settings"></item>
     <item android:id="@+id/quit" android:title="@string/quit"></item>
 
     <item
         android:id="@+id/menuLogout"
         android:title="@string/logout"></item>
+
+
 
 
 

@@ -140,6 +140,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
+        if(item.getItemId()==R.id.alarmHardware){
+            Intent intent = new Intent (MainActivity.this, AlarmHardware.class);
+            startActivity(intent);
+        }
+
         if(item.getItemId()==R.id.settings){
             Intent intent = new Intent (MainActivity.this, Settings.class);
             startActivity(intent);
@@ -153,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
         }
+
         return super.onOptionsItemSelected(item);
     }
 }

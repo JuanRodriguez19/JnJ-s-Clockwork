@@ -2,4 +2,5 @@
 <resources>
     <item name="btnTEST3" type="id" />
     <item name="btnTEST2" type="id" />
+    <item name="AlarmHardware" type="id" />
 </resources>

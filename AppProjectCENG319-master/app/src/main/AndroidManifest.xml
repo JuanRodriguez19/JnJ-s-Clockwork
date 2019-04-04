@@ -32,12 +32,17 @@
         <activity
             android:name=".TempHistory"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".Settings"
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AboutUs"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AlarmHardware"
+            android:label="@string/title_activity_alarm_hardware"
             android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".AboutUs"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".FirebaseDataHelper"></activity>
     </application>
 
 </manifest>

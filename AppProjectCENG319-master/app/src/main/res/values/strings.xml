@@ -66,9 +66,9 @@
     <string name="prevtemp">TODO</string>
     <string name="humber_college2">Humber College</string>
     <string name="computer_engineering_technology">Computer Engineering Technology</string>
-    <string name ="recent_readings">Recent Readings</string>
-    <string name ="logout">Logout</string>
-
+    <string name="recent_readings">Recent Readings</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_alarm_hardware">AlarmHardware</string>
 
 
 </resources>
