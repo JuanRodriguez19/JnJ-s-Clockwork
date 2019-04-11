@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/hardwareClock"
         android:layout_width="123dp"
         android:layout_height="81dp"
         android:layout_alignParentTop="true"
@@ -85,5 +85,13 @@
         android:layout_toStartOf="@+id/select_btn"
         android:text="Enter Minute:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <SeekBar
+        android:id="@+id/volumeBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="187dp" />
 
 </RelativeLayout>

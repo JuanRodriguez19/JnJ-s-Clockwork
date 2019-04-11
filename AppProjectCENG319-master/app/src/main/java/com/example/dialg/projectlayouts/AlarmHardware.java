@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.SeekBar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -30,8 +31,12 @@ public class AlarmHardware extends AppCompatActivity {
     private Button mCancel_btn;
     private Spinner mHour_spinner;
     private Spinner mMinute_spinner;
+    private SeekBar mVolume_bar;
     private FirebaseDatabase database;
     private DatabaseReference myRef;
+
+    SeekBar volumebar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,9 +45,11 @@ public class AlarmHardware extends AppCompatActivity {
 
         mHour_spinner = (Spinner) findViewById(R.id.hourspinner);
         mMinute_spinner = (Spinner) findViewById(R.id.minutespinner);
+        //mVolume_bar = (SeekBar) findViewById(R.id.volumeBar);
 
         mSelect_btn = (Button) findViewById(R.id.select_btn);
         mCancel_btn = (Button) findViewById(R.id.back_btn);
+        mVolume_bar = (SeekBar) findViewById(R.id.volumeBar);
         getDatabase();
 
         mSelect_btn.setOnClickListener(new View.OnClickListener() {
@@ -62,19 +69,52 @@ public class AlarmHardware extends AppCompatActivity {
             }
         });
 
-        mCancel_btn.setOnClickListener(new View.OnClickListener(){
+        mCancel_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
                 String mHour = mHour_spinner.getSelectedItem().toString();
-                myRef.child("Hour").setValue(0);
+                myRef.child("Hour").setValue(-1);
 
                 String mMinute = mMinute_spinner.getSelectedItem().toString();
-                myRef.child("Minute").setValue(0);
+                myRef.child("Minute").setValue(-1);
 
                 Toast.makeText(getApplicationContext(), "Cancelling...", Toast.LENGTH_LONG).show();
             }
         });
+
+
+
+        /*mVolume_bar.setOnClickListener(new View.OnSeekBarChangeListener() {
+            @Override
+            public void onClick(View v) {
+                String mVolume = mVolume_bar.get. toString();
+                myRef.child("Volume").setValue(mVolume);
+
+            }
+        });*/
+
+            mVolume_bar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                int volume_value;
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                    //Toast.makeText(getApplicationContext(),"Volume: "+progress, Toast.LENGTH_SHORT).show();
+                    volume_value = progress;
+                    myRef.child("Volume").setValue(volume_value);
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+
+                }
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+
+                }
+            });
     }
+
+
     private void getDatabase(){
 
         database = FirebaseDatabase.getInstance();
@@ -82,5 +122,6 @@ public class AlarmHardware extends AppCompatActivity {
 
     }
 
-    }
+
+}
 
