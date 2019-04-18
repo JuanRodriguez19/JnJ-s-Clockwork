@@ -69,6 +69,7 @@
     <string name="recent_readings">Recent Readings</string>
     <string name="logout">Logout</string>
     <string name="title_activity_alarm_hardware">AlarmHardware</string>
+    <string name="JnJs_Clockwork">JnJs Clockwork</string>
 
 
 </resources>
