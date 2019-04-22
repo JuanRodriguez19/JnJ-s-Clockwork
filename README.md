@@ -165,7 +165,7 @@ sudo i2cdetect -y 1
 ![Address Output](https://github.com/JDinhGit/TempSensor/blob/master/Documentation/PiScreenshot/address.PNG)<br>
 
 ### Case Design
-Still in development. The maximum dimensions the final product can be is around 13/16" x 6" x 2 7/8" = (32.5cm x 15.25cm x 7.25cm).
+For the case, we decided to mount the display screen, temperature sensor and speaker in order to give our project more appeal in terms of its design rather than simply being a box that contains 3 sensors within. The case overall is around 5.2 Inches tall giving it rather large appearance as it was necessary to fit the speaker on the back of the device. The temperature sensor was mounted on the top of the case so that it can receive more accurate readings and the display screen is in the front of the case. In terms of port accessibility, only the LAN and Power ports are open as the others are not necessary for the project to function. Their inclusion would only result in more open sockets that would allow dust and debris to enter which is not desirable.   
 
 ### Assembly for Hardware
 This can only be worked on once case is complete.
@@ -367,7 +367,7 @@ If errors occur, refer to Adafruit's manual setup by clicking <a href="https://l
 The database connection is established and connected to the mobile application. Reading and writing from the sensor to the database are also required. The database utilizes user-authentication to allow maximum security and protection for the users information. In order to read and write temperature, the user must be registered using a username and password through authentication processing. Offline mode allows access to the app, without the need to register and login. Offline mode skips user-authentication, and moves the user to the actual app. In offline mode, there will be no form of communications to the database.  Therefore the user is unable to read/write temperature to the database. 
 
 ### Mobile Application
-
+The mobile application upon startup will provide the login screen. Through user authentication, the application will transfer to the main menu. We designed the user interface to be clean and simple so that it would feel inviting for the user rather than being complex and intimidating. Having the 3 main features of the app (Clock, Alarm, Timer) on the homepage via tab fragments would make it quick and easy for the user to traverse without having to flip through various menus and options. The data that the app uses such as different time zones, alarms, and stopwatch count would be provided by user input so that they could choose whatever they desire. The mobile app also includes a section where it connects to the firebase where it has the temperature readings. In terms of hardware connectivity, the user will be able to set an alarm from the app and that information will then be sent to the database. The alarm data will then be sent to the hardware component, which will ultimately trigger the hardware to go off. 
 
 ### Reproduction of Project
 If you are to follow these steps exactly as explained in this guide, you should be able to reproduce this project without any diffculties considering you have the necessary equipment and tools.
